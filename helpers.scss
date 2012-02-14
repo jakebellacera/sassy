@@ -7,11 +7,11 @@
 
 // CSS Box Shadow
 @mixin box-shadow($input) {
-	-webkit-box-shadow: $input;
-	-moz-box-shadow: $input;
-	-ms-box-shadow: $input;
-	-o-box-shadow: $input;
-	box-shadow: $input;
+    -webkit-box-shadow: $input;
+       -moz-box-shadow: $input;
+        -ms-box-shadow: $input;
+         -o-box-shadow: $input;
+            box-shadow: $input;
 }
 
 // CSS Transitions - @include transition( top, 0.5s, ease-in);
