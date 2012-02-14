@@ -1,11 +1,23 @@
 // SASS Helpers
 // Various mixins to help ease your development process
 
+// To Include This File
+// @import 'helpers';
 
+
+// CSS Box Shadow
 @mixin box-shadow($input) {
 	-webkit-box-shadow: $input;
 	-moz-box-shadow: $input;
 	-ms-box-shadow: $input;
 	-o-box-shadow: $input;
 	box-shadow: $input;
+}
+
+// CSS Transitions - @include transition( top, 0.5s, ease-in);
+@mixin transition ( $type : all, $time : 0.5s, $easing : ease-in-out, $delay: 0s ){
+    -webkit-transition: $type $time $easing $delay;
+       -moz-transition: $type $time $easing $delay;
+         -o-transition: $type $time $easing $delay;
+            transition: $type $time $easing $delay;
 }
