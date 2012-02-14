@@ -1,0 +1,11 @@
+// SASS Helpers
+// Various mixins to help ease your development process
+
+
+@mixin box-shadow($input) {
+	-webkit-box-shadow: $input;
+	-moz-box-shadow: $input;
+	-ms-box-shadow: $input;
+	-o-box-shadow: $input;
+	box-shadow: $input;
+}
