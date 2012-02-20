@@ -23,10 +23,10 @@
 // Border Radius - @include border-radius(5px);
 @mixin border-radius($input) {
     -webkit-border-radius: $input;
-	-moz-border-radius: $input;
-	-ms-border-radius: $input;
-	-o-border-radius: $input;
-	border-radius: $input;
+    -moz-border-radius: $input;
+    -ms-border-radius: $input;
+    -o-border-radius: $input;
+    border-radius: $input;
 }
 
 // Inline-block - cross-browser friendly - @include inline-block;
@@ -40,55 +40,57 @@
 // Columns
 @mixin column($cols, $gutter, $containerWidth, $itemName: '.item', $lastName: '.last') {
     // Usage:
-	// Apply this mixin to the element containing the grid items.
-	// Specify the number of columns you're going to have, the spacing
-	// between each column and the container's width.
+    // Apply this mixin to the element containing the grid items.
+    // Specify the number of columns you're going to have, the spacing
+    // between each column and the container's width.
 
-	float: left;
-	width: ($containerWidth - (($cols - 1) * $gutter))/$cols;
-	margin-right: $gutter;
+    #{$itemName} {
+        float: left;
+        width: ($containerWidth - (($cols - 1) * $gutter))/$cols;
+        margin-right: $gutter;
 
-	&#{$last} {
-		margin-right: 0;
-	}
+        &#{$last} {
+            margin-right: 0;
+        }  
+    }
 }
 
 // Basic content formatting - @include content-formatting($fontFamily);
 @mixin content-formatting($fontFamily) {
     &, p, ul, ol, li, blockquote { font: 13px/1.5em $fontFamily; }
 
-	ul, ol {
-		padding: 0.5em 0 0.5em 2em;
-		margin-left: 1em;
+    ul, ol {
+        padding: 0.5em 0 0.5em 2em;
+        margin-left: 1em;
 
-		& + p:first-of-type { padding-top: 0.5em; }
+        & + p:first-of-type { padding-top: 0.5em; }
 
-		li {
-			padding: 0;
-			color: #444;
-			line-height: 2em;
-		}
-	}
+        li {
+            padding: 0;
+            color: #444;
+            line-height: 2em;
+        }
+    }
 
-	p {
-		padding: 0.25em 0 0.5em;
+    p {
+        padding: 0.25em 0 0.5em;
 
-		&:first-of-type { padding-top: 0; }
-		&:last-of-type {
-			padding-bottom: 0;
+        &:first-of-type { padding-top: 0; }
+        &:last-of-type {
+            padding-bottom: 0;
 
-			& + ul, & + ol { padding-top: 1em; }
-		}
-	}
+            & + ul, & + ol { padding-top: 1em; }
+        }
+    }
 
-	blockquote {
-		background: #F3F3F3;
-		padding: 0.5em;
-		margin: 0.5em 0;
-		border: 1px solid #DDD;
-	}
+    blockquote {
+        background: #F3F3F3;
+        padding: 0.5em;
+        margin: 0.5em 0;
+        border: 1px solid #DDD;
+    }
 
-	strong, b { font-weight: bold; }
-	em, i { font-style: italic; }
-	code { font-family: 'Inconsolata', monospace; }
+    strong, b { font-weight: bold; }
+    em, i { font-style: italic; }
+    code { font-family: 'Inconsolata', monospace; }
 }
