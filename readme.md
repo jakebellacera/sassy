@@ -1,6 +1,6 @@
 # sass-helpers: a SASS mixin library
 
-This library includes a bunch of mixins that you'd frequently use while coding SASS. Common, monotonous tasks like providing vendor tags have already been sorted out for you. Just @import and enjoy.
+This library includes a bunch of mixins that you'd frequently use while working with SASS. Common, monotonous tasks like providing vendor tags have already been sorted out for you. Just `@import` and enjoy.
 
 ## Installation
 
@@ -12,4 +12,4 @@ Done! SASS will automagically know that it's a .scss file and will concatenate i
 
 ## Documentation
 
-Coming soon. Instructions are within the library.
+Actual documentation coming soon. Instructions are currently within the library.
