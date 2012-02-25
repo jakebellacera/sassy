@@ -9,7 +9,3 @@ Clone this repo into your SASS directory. In your SASS file that needs the mixin
 	@import '_helpers';
 
 Done! SASS will automagically know that it's a .scss file and will concatenate it with your outputted code.
-
-## Documentation
-
-Actual documentation coming soon.
