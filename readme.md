@@ -12,4 +12,4 @@ Done! SASS will automagically know that it's a .scss file and will concatenate i
 
 ## Documentation
 
-Actual documentation coming soon. Instructions are currently within the library.
+Actual documentation coming soon.
