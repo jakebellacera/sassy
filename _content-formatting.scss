@@ -1,0 +1,70 @@
+// Content Formatting
+// ==================
+// Heavily inspired by normalize.css
+
+@mixin content-formatting($reset: false) {
+  // Perform reset
+  @if ($reset) {
+    h1,h2,h3,h4,h5,h6,ul,ol,li,p,blockquote { font-size: 1em; line-height: 1em; padding: 0px; margin: 0px; }
+  }
+
+  // Headers
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+  }
+  h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+  }
+  h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+  }
+  h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+  }
+  h6 {
+    font-size: 0.75em;
+    margin: 2.33em 0;
+  }
+
+  // Font styles
+  b, strong { font-weight: bold; }
+  i, em { font-style: italic; }
+
+  // Images
+  img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+  }
+
+  // Setting a line-height
+  ul,ol,li,p,blockquote {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  p {
+    margin: 0.25em 0 0.5em;
+    &:first-of-type { margin-top: 0; }
+    &:last-of-type { margin-bottom: 0; }
+  }
+
+  // Lists
+  ul, ol {
+    padding-left: 2em;
+    margin: 0.5em 0;
+    li { margin: 0.25em 0; }
+  }
+  ul { list-style: disc; }
+  ol { list-style: decimal; }
+
+  // Blockquotes
+  blockquote { margin: 1em 40px; }
+}

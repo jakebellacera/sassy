@@ -1,11 +1,8 @@
-# sass-helpers: a SASS mixin library
+# SASS Helpers
 
-This library includes a bunch of mixins that you'd frequently use while working with SASS. Common, monotonous tasks like providing vendor tags have already been sorted out for you. Just `@import` and enjoy.
+Various helpers for SASS. Just include `_helpers.scss` and you're good to go!
 
-## Installation
+## Contents
 
-Clone this repo into your SASS directory. In your SASS file that needs the mixins, place this line at the top:
-
-	@import '_helpers';
-
-Done! SASS will automagically know that it's a .scss file and will concatenate it with your outputted code.
+* `content-formatting.scss` — Content formatting helper
+* `easing.scss` — Easing helper for CSS animations
